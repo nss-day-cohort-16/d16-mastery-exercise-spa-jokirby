@@ -1,0 +1,48 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "$8,999",
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+
+       {
+      "make": "Chevy",
+      "model": "Malibu",
+      "year": "2010",
+      "price": "$9,999",
+      "description": "This is an immaculate 2010 Chevy Malibu with only 90,000 miles on it. Leather seats, power everything."
+    },
+
+       {
+      "make": "Ford",
+      "model": "Transit",
+      "year": "2009",
+      "price": "$12,000",
+      "description": "This is an immaculate 2009 Ford Transit with only 80,000 miles on it. Leather seats, power everything."
+    },
+      {
+      "make": "Fiat",
+      "model": "Malibu",
+      "year": "2010",
+      "price": "$9,999",
+      "description": "This is an immaculate 2010 Chevy Malibu with only 90,000 miles on it. Leather seats, power everything."
+    },
+      {
+      "make": "BMW",
+      "model": "Malibu",
+      "year": "2010",
+      "price": "$9,999",
+      "description": "This is an immaculate 2010 Chevy Malibu with only 90,000 miles on it. Leather seats, power everything."
+    },
+      {
+      "make": "Toyota",
+      "model": "Malibu",
+      "year": "2010",
+      "price": "$9,999",
+      "description": "This is an immaculate 2010 Chevy Malibu with only 90,000 miles on it. Leather seats, power everything."
+    }
+  ]
+}

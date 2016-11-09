@@ -1,0 +1,38 @@
+body {
+  background-color: lightblue; }
+
+.carCard {
+  background-color: blue; }
+
+#carOutput {
+  margin-top: 10%; }
+
+.carCard {
+  background-color: lightyellow;
+  border: solid black 2px;
+  margin-top: 3%;
+  padding: 3%;
+  cursor: pointer;
+  cursor: hand;
+  height: 150px;
+  overflow: scroll; }
+
+.blackBorder {
+  background-image: url("/images/yellow.gif");
+  -webkit-box-shadow: inset 0px 0px 0px 10px #000;
+  -moz-box-shadow: inset 0px 0px 0px 10px #000;
+  box-shadow: inset 0px 0px 0px 10px #000; }
+
+.cardTitle {
+  font-size: 1.2em;
+  font-weight: bold;
+  border-bottom: solid black 1px; }
+
+ul {
+  list-style: none; }
+
+.getDescription {
+  width: 80%;
+  word-wrap: break-word; }
+
+/*# sourceMappingURL=quiz.css.map */

@@ -5,34 +5,32 @@ var CarLot = (function(oldCarLot) {
 
 
   oldCarLot.loadInventory = function(callBackFn) {
-     let inventoryLoader = new XMLHttpRequest();
-     inventoryLoader.open("GET", "../inventory.json");
-     inventoryLoader.send();
+    let inventoryLoader = new XMLHttpRequest();
+    inventoryLoader.open("GET", "../inventory.json");
+    inventoryLoader.send();
 
-     inventoryLoader.addEventListener("load", function () {
-     let carDataArray = JSON.parse(this.responseText).cars;
-     callBackFn(carDataArray);
-     });
-   };
+    inventoryLoader.addEventListener("load", function() {
+      let carDataArray = JSON.parse(this.responseText).cars;
+      callBackFn(carDataArray);
+    });
+  };
 
   oldCarLot.jsonCars = function(carData) {
     for (var key in carData) {
       inventory.push(carData[key]);
     }
-      oldCarLot.populatePage(inventory);
+    oldCarLot.populatePage(inventory);
   };
 
-  oldCarLot.getInventory = function () {
+  oldCarLot.getInventory = function() {
     return inventory;
   };
 
-  oldCarLot.setInventory = function (newInventory) {
+  oldCarLot.setInventory = function(newInventory) {
     newInventory = inventory;
   };
-   
-   return oldCarLot;
+
+  return oldCarLot;
 
 
 })(CarLot || {});
-  
-

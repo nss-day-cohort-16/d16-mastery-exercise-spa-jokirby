@@ -25,7 +25,7 @@ var CarLot = (function(oldCarLot) {
   };
 
 /////////////////////---- EVENT LISTENERS -----//////////////////
-  let textInput = document.getElementById('textInput');
+let textInput = document.getElementById('textInput');
   textInput.disabled = true;
 
   document.querySelector("body").addEventListener("click", function(event) {  
@@ -41,42 +41,36 @@ var CarLot = (function(oldCarLot) {
   textInput.addEventListener("keyup", function () {oldCarLot.instantAdd();});
 
 /////////////////////---- UPDATE DESCRIPTION -----////////////////////
-let userInput = document.getElementById('textInput');
-
-
-
   oldCarLot.instantAdd = function () {
-    if (userInput) {
+    if (textInput) {
   let currentCar = document.getElementsByClassName('blackBorder')[0].id;
      let grabDescription = document.getElementById(currentCar).querySelector(".getDescription");  
-        grabDescription.innerHTML = userInput.value;
+        grabDescription.innerHTML = textInput.value;
     } else {
       return;
     }
   };
 
-/////////////////-- OPTIONAL/ Submit Button --///////////////////////
-  // document.getElementById('submitButton')
-  //   .addEventListener("click", function () {oldCarLot.updateDescriptionArray()});
+/////////////////-- OPTIONAL/ Enter Key --///////////////////////
+//     textInput.addEventListener("keypress", function(event) {
+//       if (event.keyCode === 13) {
+//         oldCarLot.updateDescriptionArray();
+//         textInput.disabled = false;
+//         return false;
+//       }
+// });
 
-  // document.getElementById('textInput')
-  //   .addEventListener("keyup", function(event) {
-  //     if (event.keyCode === 13) {
-  //       oldCarLot.updateDescriptionArray();
-  //     }
-  //   });
-
-
-  //  oldCarLot.updateDescriptionArray = function() {
-  //   let currentCar = document.getElementsByClassName('blackBorder')[0].id;
+//    oldCarLot.updateDescriptionArray = function() {
+//     let currentCar = document.getElementsByClassName('blackBorder')[0].id;
   
-  //   if (userInput) {
-  //   inventory[currentCar].description = userInput;
-  //     oldCarLot.setInventory(inventory);
-  //   } else {
-  //     alert("You must first select a car to update & then enter text in input.");
-  //   };
-  // };
+//     if (userInput) {
+//     inventory[currentCar].description = userInput;
+//       oldCarLot.setInventory(inventory);
+//       oldCarLot.updateDFocus(currentCar);
+//     } else {
+//       alert("You must first select a car to update & then enter text in input.");
+//     };
+//   };
 
 CarLot.loadInventory(oldCarLot.jsonCars);
 

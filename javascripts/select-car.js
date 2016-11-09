@@ -6,14 +6,13 @@ var CarLot = (function(oldCarLot) {
   oldCarLot.updateDFocus = function(id) {
     document.getElementById("textInput").focus();
     let elements = document.getElementsByClassName("blackBorder");
-    while(elements.length > 0){
-        elements[0].classList.toggle("blackBorder");
-      }
+    while (elements.length > 0) {
+      elements[0].classList.toggle("blackBorder");
+    }
     document.getElementById(id).classList.toggle("blackBorder");
   };
 
-   return oldCarLot;
+  return oldCarLot;
 
 
 })(CarLot || {});
-  
